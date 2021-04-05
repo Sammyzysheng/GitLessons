@@ -13,9 +13,13 @@ Will update and build on remote so be careful
 ## Remove added files:
 ### git rm --cached filename
 
-## Unstage files 
-### git reset filename
-Will keep changes while set files not ready to commit
+## Checkout on last commits
+### git reset --soft
+Keep working dir changes and staged changes, back to last commit
+### git reset --mix
+Keep working dir changes, unstage staged changes to working dir, back to last commit
+### git reset --hard
+Back to last commit, remove all changes
 
 ## Temporarily Wipe changes before commiting file changes (both staged and unstaged files)
 ### git stash save "message" ("git stash list" to check stash history)
